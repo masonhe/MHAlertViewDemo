@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WT-io-nRA">
+                                <rect key="frame" x="156" y="268.5" width="62" height="30"/>
+                                <state key="normal" title="单个按钮"/>
+                                <connections>
+                                    <action selector="singleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOB-tg-2bA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyE-uE-mF6">
+                                <rect key="frame" x="156" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="两个按钮"/>
+                                <connections>
+                                    <action selector="doubleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lr-22-fw9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSQ-yO-WjP">
+                                <rect key="frame" x="141" y="368.5" width="92" height="30"/>
+                                <state key="normal" title="自定义按钮色"/>
+                                <connections>
+                                    <action selector="coustomColorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1g-gG-XKZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lyE-uE-mF6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1aO-dg-Ido"/>
+                            <constraint firstItem="lyE-uE-mF6" firstAttribute="top" secondItem="4WT-io-nRA" secondAttribute="bottom" constant="20" id="40K-YR-p42"/>
+                            <constraint firstItem="lyE-uE-mF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPD-ce-GjM"/>
+                            <constraint firstItem="XSQ-yO-WjP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RY0-p6-uLF"/>
+                            <constraint firstItem="4WT-io-nRA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a3z-t3-NrA"/>
+                            <constraint firstItem="XSQ-yO-WjP" firstAttribute="top" secondItem="lyE-uE-mF6" secondAttribute="bottom" constant="20" id="gaV-wO-0Ip"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

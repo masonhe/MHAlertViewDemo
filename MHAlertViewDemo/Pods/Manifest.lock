@@ -1,0 +1,15 @@
+PODS:
+  - MHAlertView (0.2.1):
+    - PureLayout (~> 3.0.2)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - MHAlertView
+
+SPEC CHECKSUMS:
+  MHAlertView: 751239c367ab44bd9cb27258fdd1cbfa5f9696a7
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: 0f6d183e59ceadbae6225a893b692a4c7d9173cd
+
+COCOAPODS: 1.2.0
